@@ -6,6 +6,7 @@ if __name__ == "__main__":
     if count == 0:
         print("0")
     total = 0
+    i = 1
     for i in arg:
         total += int(i)
     print(total)        
