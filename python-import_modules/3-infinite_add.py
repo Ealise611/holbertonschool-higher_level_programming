@@ -5,8 +5,8 @@ if __name__ == "__main__":
     count = len(arg)
     if count == 0:
         print("0")
-    total = 0
-    i = 1
-    for i in arg:
-        total += int(i)
-    print(total)        
+    else:
+        total = 0
+        for i in arg:
+            total += int(i)
+        print(total)        
