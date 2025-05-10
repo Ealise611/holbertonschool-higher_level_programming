@@ -9,4 +9,4 @@ if __name__ == "__main__":
         total = 0
         for i in arg:
             total += int(i)
-        print(total)        
+        print(total)
