@@ -10,5 +10,5 @@ def roman_to_int(roman_string):
             i += 1
         else:
             result += roman[roman_string[i]]
-            i += 1
+        i += 1
     return result
