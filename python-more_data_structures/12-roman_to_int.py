@@ -4,8 +4,6 @@ def roman_to_int(roman_string):
                 'C': 100, 'D': 500, 'M': 1000}
     result = 0
     i = 0
-    if len(roman_string) < 0:
-        return None
     if not isinstance(roman_string, str):
         return None
     while i < len(roman_string):
