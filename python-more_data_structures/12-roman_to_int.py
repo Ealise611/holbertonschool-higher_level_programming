@@ -6,6 +6,8 @@ def roman_to_int(roman_string):
     i = 0
     if len(roman_string) < 0:
         return None
+    if not isinstance(roman_string):
+        return None
     while i < len(roman_string):
         if i + 1 < len(roman_string) and roman[roman_string[i]] < roman[roman_string[i + 1]]:
             result += roman[roman_string[i + 1]] - roman[roman_string[i]]
