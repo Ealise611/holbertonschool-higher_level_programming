@@ -20,5 +20,5 @@ def text_indentation(text):
             print(new_text.strip())
             print()
             new_text = ""
-    if new_text.strip():
+    if new_text.strip() and text[-1] not in ".?:":
         print(new_text.strip())
