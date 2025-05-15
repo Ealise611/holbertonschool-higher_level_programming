@@ -25,7 +25,9 @@ The result is a new matrix with the results rounded to 2 decimal places.
         for item in row:
             if not isinstance(item, (float, int)):
                 raise TypeError(
-                    "matrix must be a matrix (list of lists) of integers/floats")
+                    "matrix must be a matrix (list of lists) " 
+                    "of integers/floats"
+                    )
 
     row_length = len(matrix[0])
     for row in matrix:
