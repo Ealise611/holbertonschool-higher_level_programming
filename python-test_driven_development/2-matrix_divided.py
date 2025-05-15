@@ -32,9 +32,7 @@ The result is a new matrix with the results rounded to 2 decimal places.
     row_length = len(matrix[0])
     for row in matrix:
         if len(row) != row_length:
-            raise TypeError(
-                "Each row of the matrix must have the same size"
-                )
+            raise TypeError("Each row of the matrix must have the same size")
 
     if  not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
