@@ -4,9 +4,9 @@ The ``say_my_name`` module
 Using ``say_my_name``
 -------------------------
 
-First import ``say_my_name`` from the ``2-say_my_name`` file:
+First import ``say_my_name`` from the ``3-say_my_name`` file:
 
->>> say_my_name = __import__('2-say_my_name').say_my_name
+>>> say_my_name = __import__('3-say_my_name').say_my_name
 
 >>> say_my_name("john", "smith")
 My name is john smith
