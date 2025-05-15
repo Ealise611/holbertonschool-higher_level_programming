@@ -2,7 +2,8 @@
 """
 This module defines a function that prints text with formatting.
 
-The function inserts two new lines after each '.', '?' and ':' in the input text.
+The function inserts two new lines after
+each '.', '?' and ':' in the input text.
 It also ensures that no printed line has leading or trailing spaces.
 """
 
