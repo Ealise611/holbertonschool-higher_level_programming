@@ -10,11 +10,11 @@ First import ``text_indentation`` from the ``5-text_indentation`` file:
 
 >>> text_indentation("hello.hh? hh:")
 hello.
-
+<BLANKLINE>
 hh?
-
+<BLANKLINE>
 hh:
-
+<BLANKLINE>
 
 >>> text_indentation(123)
 Traceback (most recent call last):
