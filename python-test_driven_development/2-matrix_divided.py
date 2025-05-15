@@ -15,11 +15,11 @@ The result is a new matrix with the results rounded to 2 decimal places.
 """
     if (
         not isinstance(matrix, list)
-        or not all (isinstance(row, list) for row in matrix)
-        ):
+        or not all(isinstance(row, list) for row in matrix)
+    ):
         raise TypeError(
             "matrix must be a matrix (list of lists) of integers/floats"
-            )
+        )
     
     for row in matrix:
         for item in row:
