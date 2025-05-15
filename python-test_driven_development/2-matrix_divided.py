@@ -34,7 +34,7 @@ The result is a new matrix with the results rounded to 2 decimal places.
         if len(row) != row_length:
             raise TypeError(
                 "Each row of the matrix must have the same size"
-            )
+                )
 
     if  not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
