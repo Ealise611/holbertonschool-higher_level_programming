@@ -12,8 +12,6 @@ class Rectangle:
 
     print_symbol = "#"
 
-
-
     def __init__(self, width=0, height=0):
         type(self).number_of_instances += 1
         self.width = width
@@ -80,6 +78,7 @@ class Rectangle:
             return rect_1
         else:
             return rect_2
+
     @classmethod
     def square(cls, size=0):
         return cls(size, size)
