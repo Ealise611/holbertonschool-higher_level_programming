@@ -4,10 +4,10 @@ Square module
 """
 
 
-BaseGeometry = __import__('9-rectangle').BaseGeometry
+Rectangle = __import__('9-rectangle').BaseGeometry
 
 
-class Squre(BaseGeometry):
+class Squre(Rectangle):
     """
     inherits from BaseGeometry
     width and height must be private
