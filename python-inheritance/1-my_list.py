@@ -16,11 +16,6 @@ class MyList(list):
     This class inherits all the functionality of the standard Python list
     and adds a custom method for displaying a sorted version of the list.
     """
-def print_sorted(self):
-    """
-    Print the elements of the list in ascending sorted order.
-    This method does not modify the original list. It prints a new 
-    sorted version of the list where all elements are assumed to be integers.
-    """
-    result = sorted(self)
-    print(result)
+    def print_sorted(self):
+        result = sorted(self)
+        print(result)
