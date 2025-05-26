@@ -3,10 +3,12 @@
 This module defines a custom list subclass called MyList.
 
 The MyList class inherits from the built-in list type and adds a public
-instance method `print_sorted` that prints the list's elements in ascending order.
+instance method `print_sorted` that prints the list's elements in
+ascending order.
 
 All elements in the list are assumed to be integers.
 """
+
 
 class MyList(list):
     """
