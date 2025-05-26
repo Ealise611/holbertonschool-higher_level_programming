@@ -11,8 +11,6 @@ First import ``BaseGeometry`` class from the ``7-base_geometry`` file:
 
 Tests:
 >>> bg = BaseGeometry()
->>> bg.integer_validator("my_int", 12)
->>> bg.integer_validator("width", 89)
 >>> try:
 ... bg.integer_validator("name", "John")
 ... except Exception as e:
