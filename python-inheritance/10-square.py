@@ -7,7 +7,7 @@ Square module
 Rectangle = __import__('9-rectangle').BaseGeometry
 
 
-class Squre(Rectangle):
+class Square(Rectangle):
     """
     inherits from BaseGeometry
     width and height must be private
