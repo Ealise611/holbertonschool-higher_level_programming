@@ -3,7 +3,8 @@
 This module provides a function to check if an object is exactly an instance
 of a specified class.
 
-It does not consider inheritance — only direct instances of the class will return True.
+It does not consider inheritance — only direct instances of the class
+will return True.
 """
 
 
