@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
-Rectangle module
+Square module
 """
 
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
-class Rectangle(BaseGeometry):
+class Squre(BaseGeometry):
     """
     inherits from BaseGeometry
     width and height must be private
