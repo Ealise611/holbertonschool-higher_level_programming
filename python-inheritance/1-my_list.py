@@ -17,5 +17,4 @@ class MyList(list):
     and adds a custom method for displaying a sorted version of the list.
     """
     def print_sorted(self):
-        result = sorted(self)
-        print(result)
+        result = sorted(self)print(result)
