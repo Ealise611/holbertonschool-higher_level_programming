@@ -21,7 +21,7 @@ class Student:
                 for attr in attrs:
                     if hasattr(self, attr):
                         result[attr] = getattr(self, attr)
-                        #set dictironary[key] = value
+                        # set dictironary[key] = value
                 return result
         return self.__dict__
 
