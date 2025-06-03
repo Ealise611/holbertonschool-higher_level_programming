@@ -13,8 +13,8 @@ def serialize_and_save_to_file(data, filename):
     this function serialize and save data to file
     """
     with open(filename, 'w') as f:
-        json.dump(data, f)
+        return json.dump(data, f)
 
 def load_and_deserialize(filename):
     with open(filename, 'r') as f:
-        json.load(f)
+        return json.load(f)
