@@ -31,5 +31,5 @@ def fetch_and_save_posts():
     with open('posts.csv', 'w') as f:
         fieldnames = ['id', 'title', 'body']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader
+        writer.writeheader()
         writer.writerows(filtered_post)
