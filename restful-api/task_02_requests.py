@@ -25,7 +25,7 @@ def fetch_and_save_posts():
     if response.status_code == 200:
         posts = response.json()
         filtered_post = [
-            {['id'], ['title'], ['body']}
+            {'id', 'title', 'body'}
             for post in posts
         ]
     with open('posts.csv', 'w') as f:
