@@ -13,6 +13,9 @@ class SimpleHandler(http.server.BaseHTTPRequestHandler):
 
 PORT = 8000
 
+class MyTCPServer(socketserver.TCPServer):
+    allow_reuse_address = True
+
 with socketserver.TCPServer(("", PORT), SimpleHandler) as httpd:
-    print("serving at PORT {PORT}")
-    httpd.serve_forever
+    print(f"serving at PORT {PORT}")
+    httpd.serve_forever()
