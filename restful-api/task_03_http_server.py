@@ -7,7 +7,12 @@ class SimpleHandler(http.server.BaseHTTPRequestHandler):
     this is a simple handler class
     """
     def do_GET(self):
-        if self.path == '/data':
+        if self.path == '/':
+            self.send_response(200)
+            self.send_header('Content-type', 'plain/text')
+            self.end_headers()
+            self.wfile.write(b'Welcome to the simple API!')
+        elif self.path == '/data':
             self.send_response(200)
             self.send_header('Content-type', 'application/json')
             self.end_headers()
@@ -15,6 +20,11 @@ class SimpleHandler(http.server.BaseHTTPRequestHandler):
             data = {"name": "John", "age": 30, "city": "New York"}
             json_data = json.dumps(data)
             self.wfile.write(json_data.encode('utf-8'))
+        elif self.path =='/status':
+            self.send_response(200)
+            self.send_header('Content-type', 'plain/text')
+            self.end_headers()
+            self.wfile.write(b'OK')
         else:
             self.send_response(404)
             self.send_header('Content-type', 'plain/text')
