@@ -15,7 +15,11 @@ class SimpleHandler(http.server.BaseHTTPRequestHandler):
             data = {"name": "John", "age": 30, "city": "New York"}
             json_data = json.dumps(data)
             self.wfile.write(json_data.encode('utf-8'))
-        
+        else:
+            self.send_response(404)
+            self.send_header('Content-type', 'plain/text')
+            self.end_headers()
+            self.wfile.write(b'Endpoint not found')
 
 PORT = 8000
 
