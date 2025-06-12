@@ -27,7 +27,7 @@ def verify_password(username, password):
 @app.route('/basic-protected', methods=['GET'])
 @auth.login_required
 def basic_protected():
-    return f"Basic Auth: Access Granted"
+    return "Basic Auth: Access Granted", 200
 
 @app.route('/login', methods=['POST'])
 def login():
