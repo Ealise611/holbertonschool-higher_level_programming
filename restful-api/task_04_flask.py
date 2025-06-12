@@ -45,6 +45,10 @@ def add_user():
         "city": data.get("city", "")
     }
     return jsonify({"message": "User added", "user": users[username]}), 201
+# -- Usage example --
+# curl -X POST [URL] /
+#    -H "Content-Type: application/json" /
+#    -d '{"key1":"value1","key2":"value2"}'
 
 if __name__ == '__main__':
     app.run()
