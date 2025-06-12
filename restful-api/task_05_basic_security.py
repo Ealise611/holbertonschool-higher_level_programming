@@ -55,7 +55,7 @@ def adminonly():
     if current_user["role"] == 'admin':
         return "Admin Access: Granted"
     else:
-        return jsonify({"error": "Admin access rquired"}), 403
+        return jsonify({"error": "Admin access required"}), 403
 
 @jwt.unauthorized_loader
 def handle_unauthorized_error(err):
