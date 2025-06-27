@@ -9,7 +9,7 @@ import MySQLdb
 conn = MySQLdb.connect(
     host="localhost",
     port=3306,
-    user="sqluser",
+    user="root",
     passwd="root",
     db="hbtn_0e_0_usa",
     charset="utf8"
