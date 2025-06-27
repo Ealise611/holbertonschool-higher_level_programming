@@ -15,5 +15,3 @@ for row in query_rows:
     print(row)
 cur.close()
 conn.close()
-# This script connects to a MySQL database and retrieves all state IDs from the 'states' table,
-# ordering them in ascending order. It prints each ID on a new line.
