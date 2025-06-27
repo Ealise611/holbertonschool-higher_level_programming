@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import MySQLdb
 
 conn = MySQLdb.connect(
