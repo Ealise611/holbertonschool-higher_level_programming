@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-'''
+"""
 This script connects to a MySQL database and retrieves all rows from the
 `states` table, ordered by the `id` column in ascending order.
-'''
+"""
 import MySQLdb
-'''
+"""
 Module: MySQLdb
-'''
+"""
 
 conn = MySQLdb.connect(
     host="localhost",
