@@ -1,4 +1,4 @@
-#!bin/usr/python3
+#!/usr/bin/python3
 """
 This script lists all states from the database `hbtn_0e_0_usa` that start with the letter 'N'.
 It connects to a MySQL database using the provided username, password, and database name.
