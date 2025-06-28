@@ -2,7 +2,9 @@
 """
 This script takes in 4 arguments and displays all values in
 the states table of hbtn_0e_0_usa where name matches the argument.
-The script should take 4 arguments: mysql username, mysql password, database name and state name searched (safe from MySQL injection)
+The script should take 4 arguments:
+mysql username, mysql password, database name and state name searched
+(safe from MySQL injection)
 must use the module MySQLdb (import MySQLdb)
 script should connect to a MySQL server running on localhost at port 3306
 Results must be sorted in ascending order by states.id
