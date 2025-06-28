@@ -31,7 +31,6 @@ if __name__ == "__main__":
     cur.execute(query, (state_name,))
     query_rows = cur.fetchall()
     for row in query_rows:
-        if row[1] == state_name:
-            print(row)
+        print(row)
     cur.close()
     conn.close()
