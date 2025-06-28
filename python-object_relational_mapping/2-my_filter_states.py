@@ -27,7 +27,7 @@ if __name__ == "__main__":
         charset="utf8"
     )
     cur = conn.cursor()
-    query = f"SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(state_name)
+    query = "SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(state_name)
     cur.execute(query)
     query_rows = cur.fetchall()
     for row in query_rows:
