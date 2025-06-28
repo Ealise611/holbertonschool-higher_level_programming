@@ -8,6 +8,7 @@ Must use format to create the SQL query with user input
 Results must be sorted in ascending order by states.id
 the code should not be executed when imported
 """
+
 import MySQLdb
 import sys
 
@@ -26,7 +27,7 @@ if __name__ == "__main__":
         charset="utf8"
     )
     cur = conn.cursor()
-    query = f"SELECT * FROM states WHERE name = '{state_name'} ORDER BY id ASC"
+    query = f"SELECT * FROM states WHERE name = '{state_name}' ORDER BY id ASC"
     cur.execute(query, (state_name,))
     query_rows = cur.fetchall()
     for row in query_rows:
