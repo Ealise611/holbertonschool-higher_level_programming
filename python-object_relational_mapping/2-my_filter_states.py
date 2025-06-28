@@ -26,7 +26,7 @@ if __name__ == "__main__":
         charset="utf8"
     )
     cur = conn.cursor()
-    query = "SELECT * FROM states WHERE name = state_name ORDER BY id ASC"
+    query = "SELECT * FROM states WHERE name = %s ORDER BY id ASC"
     cur.execute(query, (state_name,))
     query_rows = cur.fetchall()
     for row in query_rows:
