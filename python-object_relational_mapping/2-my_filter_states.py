@@ -2,7 +2,8 @@
 """
 This script takes in 4 arguments and displays all values in
 the states table of hbtn_0e_0_usa where name matches the argument.
-4 arguments are: mysql username, mysql password, database name and state name searched
+4 arguments are: mysql username, mysql password,
+database name and state name searched
 must use the module MySQLdb (import MySQLdb)
 Must use format to create the SQL query with user input
 Results must be sorted in ascending order by states.id
@@ -27,7 +28,8 @@ if __name__ == "__main__":
         charset="utf8"
     )
     cur = conn.cursor()
-    query = "SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(state_name)
+    query = "SELECT * " \
+    "FROM states WHERE name = '{}' ORDER BY id ASC".format(state_name)
     cur.execute(query)
     query_rows = cur.fetchall()
     for row in query_rows:
