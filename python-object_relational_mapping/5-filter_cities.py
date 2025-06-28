@@ -42,6 +42,6 @@ if __name__ == "__main__":
     cur.execute(query, (state_name,))
     query_rows = cur.fetchall()
     cities = ", ".join([row[0] for row in query_rows])
-    print(cities if cities else "No result")
+    print(cities)
     cur.close()
     conn.close()
