@@ -39,7 +39,7 @@ if __name__ == "__main__":
     session = Session()
     # Query all State objects and order by id
     states = session.query(State).filter(State.name.like('%a%')) \
-    .order_by(State.id).all()
+            .order_by(State.id).all()
     # Print the results
     for state in states:
         print(f"{state.id}: {state.name}")
