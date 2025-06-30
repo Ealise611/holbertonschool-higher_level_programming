@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This script prints the State objects with the 'name' passed as an argument 
+This script prints the State objects with the 'name' passed as an argument
 from the database hbtn_0e_6_usa
 script should take 4 arguments:
 mysql username, mysql password, database name, state name to search
@@ -38,7 +38,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     # Create a Session
     session = Session()
-    # Query all State objects and print the state.id if it matches the state_name
+    # Query all State objects and print the state.id
+    # if it matches the state_name
     states = (
         session.query(State)
         .filter(State.name == state_name)
@@ -53,4 +54,3 @@ if __name__ == "__main__":
         print("Not found")
     # Close the session
     session.close()
-    
