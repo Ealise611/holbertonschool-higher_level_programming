@@ -36,7 +36,7 @@ if __name__ == "__main__":
     # Create a Session
     session = Session()
     # change the name of the State where id = 2 to New Mexico
-    new_state = session.query(State).filter(State.id ==2).first()
+    new_state = session.query(State).filter(State.id == 2).first()
     if new_state is None:
         print("Not found")
     else:
