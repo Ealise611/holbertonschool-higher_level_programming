@@ -16,10 +16,10 @@ def generate_invitations(template, attendees):
         return
     count = 1
     for attendee in attendees:
-        name = attendee["name"] if attendee["name"] is not None else "N/A"
-        event_title = attendee["event_title"] if attendee["event_title"] is not None else "N/A"
-        event_date = attendee["event_date"] if attendee["event_date"] is not None else "N/A"
-        event_location = attendee["event_location"] if attendee["event_location"] is not None else "N/A"
+        name = attendee.get("name", "N/A")
+        event_title = attendee.get("event_title", "N/A")
+        event_date = attendee.get("event_date", "N/A")
+        event_location = attendee.get("event_location", "N/A")
         invitation = template.replace("{name}", name)
         invitation = invitation.replace("{event_title}", event_title)
         invitation = invitation.replace("{event_date}", event_date)
