@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Product Display</title>
+</head>
+<body>
+    {% include 'header.html' %}
+    <h1>Product Lists</h1>
+    <p>This is a simple Flask application.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if products %}
+                {% for product in products %}
+                <tr>
+                    <td>{{product.name}}</td>
+                    <td>{{product.category}}</td>
+                    <td>{{product.price}}</td>
+                </tr>
+                {% endfor %}
+            {% else %}
+                <tr><td colspan="3">Product not found</td></tr>
+            {% endif %}
+        </tbody>
+    </table>
+    {% include 'footer.html' %}
+</body>
+</html>
