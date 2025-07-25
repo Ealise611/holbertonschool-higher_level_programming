@@ -40,28 +40,10 @@ def products():
         with open('products.json', 'r') as file:
             data = json.load(file)
             product_list = data
-        
-        if id_para:
-            filtered_products = []
-            for product in product_list:
-                if str(product["id"]) == id_para: #so use str here
-                    filtered_products.append(product)
-            return render_template('product_display.html', products=filtered_products)
-        else: #no id given
-            return render_template('product_display.html', products=product_list)
-    if source == "csv":
+    elif source == "csv":
         with open('products.csv', 'r') as file:
             product_list = list(csv.DictReader(file))
-
-        if id_para:
-            filtered_products = []
-            for product in product_list:
-                if str(product["id"]) == id_para: #so use str here
-                    filtered_products.append(product)
-            return render_template('product_display.html', products=filtered_products)
-        else: #no id given
-            return render_template('product_display.html', products=product_list)
-    if source == "sql":
+    elif source == "sql":
         with sqlite3.connect('products.db') as conn:
             cursor = conn.cursor()
             cursor.execute("SELECT * FROM Products")
