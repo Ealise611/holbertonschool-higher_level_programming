@@ -59,14 +59,14 @@ def products():
                 }
                 product_list.append(product_dict)
 
-        if id_para:
-            filtered_products = []
-            for product in product_list:
-                if str(product["id"]) == id_para: #so use str here
-                    filtered_products.append(product)
-            return render_template('product_display.html', products=filtered_products)
-        else: #no id given
-            return render_template('product_display.html', products=product_list)
+    if id_para:
+        filtered_products = []
+        for product in product_list:
+            if str(product["id"]) == id_para: #so use str here
+                filtered_products.append(product)
+        return render_template('product_display.html', products=filtered_products)
+    else: #no id given
+        return render_template('product_display.html', products=product_list)
 
 
 
